@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Plants</title>
     <style>
         body {
             font-family: sans-serif;
@@ -11,9 +11,69 @@
             color: #333;
         }
         header {
-            background-color: #fff;
-            padding: 20px 0;
-            text-align: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding:20px 100px; 
+            align-items: center;
+            height: 134px;
+        }
+        header *{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+        header div{
+            height:20px;
+            align-items:last baseline;
+        }
+        header div img{
+            width:20px;
+        }
+        header div p{
+            font-family: Inika;
+            font-weight: 400;
+            font-size: 16px;
+            letter-spacing: 0%;
+            margin-left: 1px;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        ul{
+            margin:0;
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li{
+            margin-left: 20px;
+        }
+        ul li a:active{
+            color:black;
+            text-decoration: double;
+        }
+        ul li a{
+            color: black;
+            text-decoration: none;
+            font-family: Inika;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 50px;
+            letter-spacing: 0%;
+            color: #010201;
+
+        }
+        ul li a:visited{
+            font-family: Inika;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 50px;
+            letter-spacing: 0%;
+            color: #E06733;
+
+        }
+        ul li:first-child{
+            margin-left: 0;
         }
         .container {
             width: 80%;
