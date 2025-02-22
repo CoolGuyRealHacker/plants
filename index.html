@@ -14,9 +14,10 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            padding:20px 100px; 
+            padding:0 100px; 
             align-items: center;
             height: 134px;
+            margin-bottom: 5vh;
         }
         header *{
             display: flex;
@@ -48,11 +49,11 @@
         ul li{
             margin-left: 20px;
         }
-        ul li a:active{
+        a:active{
             color:black;
             text-decoration: double;
         }
-        ul li a{
+        a{
             color: black;
             text-decoration: none;
             font-family: Inika;
@@ -60,10 +61,9 @@
             font-size: 16px;
             line-height: 50px;
             letter-spacing: 0%;
-            color: #010201;
 
         }
-        ul li a:visited{
+        a:visited{
             font-family: Inika;
             font-weight: 700;
             font-size: 16px;
@@ -76,25 +76,154 @@
             margin-left: 0;
         }
         .container {
-            width: 80%;
             margin: 0 auto;
-            padding: 20px;
+            width: 100vw;
+            /*padding: 20px;
+            width: 80%;*/
         }
-        h1, h2 {
+        section{
+            width: 100vw;
+        }
+        /*h1, h2 {
             text-align: center;
             margin-bottom: 20px;
-        }
-        p {
+        }*/
+        /*p {
             line-height: 1.6;
             text-align: center;
             margin-bottom: 20px;
+        }*/
+        .plantsSymbols{
+            color: #499A18;
+        }
+        .hero{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .hero img{
+            width: 25vw;
+            height: 25vw;
+        }
+        .underHeroBlock{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 20vw;
+            
+        }
+        .underHeroBlock p{
+            font-family: Inter;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 35px;
+            letter-spacing: 0%;
+
+        }
+        .underHeroBlock h2{
+            font-family: Inter;
+            font-weight: 700;
+            font-size: 45px;
+            line-height: 50px;
+            letter-spacing: 0%;
+            color: #717171;
+
+        }
+        .underHeroBlock button{
+            border: 2px solid #E06733;
+            width: 10vw;
+            height: 5vh;
+            border-radius: 10px;
+            font-family: Inter;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 0%;
+            text-align: center;
+            margin-bottom: 10vh;
+        }
+        .underHeroBlock .start-text{
+            text-align: start;
+        }
+        .about{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            background-color: white;
+        }
+        .about img{
+            width:25vw;
+            height:25vw;
+            margin-bottom: 10vh;
+            margin-top: 10vh;
+        }
+        .underAbout{
+            width:25vw;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
+            
+        }
+        .underAbout h2{
+            font-family: Inika;
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 52.12px;
+            letter-spacing: 0%;
+            color: #E06733;
+            margin-bottom: 2vh;
+            margin-top: 8vh;
+        }
+        .underAbout p{
+            font-family: Inter;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 30px;
+            letter-spacing: 0%;
+            margin-bottom: 10vh;
         }
         .services {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-bottom: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
+        .underServices{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .underServices button{
+            width: 10vw;
+            height: 5vh;
+            border-radius: 5px;
+            border-width: 1px;
+            border-color: #E06733;
+            background-color: none;
+            color: #E06733;
+            font-family: Inika;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 26.06px;
+            letter-spacing: 0%;
+
+
+        }
+        .underServices div:nth-last-child(n+2){
+            margin-right: 108px;
+        }
+        .underServices h2{
+            font-family: Inika;
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 52.12px;
+            letter-spacing: 0%;
+            color: #499A18;
+
+        }
+        
         .service {
             background-color: #fff;
             padding: 20px;
@@ -129,7 +258,7 @@
         }
     </style>
 </head>
-<body>
+<body vlink="#E06733">
     <header>
         <div>
             <img src="img/nav/logo_vector.svg">
@@ -148,22 +277,27 @@
     <div class="container">
         <section class="hero">
             <img src="img/main-container/leafs.png" alt="Hero Image" width="500" height="300">
-            <h2>We grow plants and give you oxygen</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-            <button>Learn More</button>
+            <div class="underHeroBlock">
+                <h2 class="start-text">We grow <span class="plantsSymbols">plants</span> and give you oxygen</h2>
+                <p class="start-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                <button>Learn More</button>
+            </div>
         </section>
         <section class="about">
-            <h2>About Us</h2>
-            <p>We are professional experienced gardeners.</p> 
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+            <div class="underAbout">
+                <h2 class="start-text"><span class="plantsSymbols">We are</span> professional experienced <span class="plantsSymbols">gardeners</span></h2> 
+                <p class="start-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+            </div>
             <img src="img/About/houseplant 1.png" alt="About Us Image" width="500" height="300">
         </section>
         <section class="services">
-            <div>
-                <h2>Our Services</h2>
-                <button>Gardens</button>
-                <button>Lawn</button>
-                <button>Planting</button>
+            <div class="underServices">
+                <h2>Service and our projects</h2>
+                <div>
+                    <button>Gardens</button>
+                    <button>Lawn</button>
+                    <button>Planting</button>
+                </div>
             </div>
             <div class="service">
                 <img src="placeholder-300x200.png" alt="Garden Care">
