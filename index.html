@@ -189,11 +189,17 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            width: 100%;
+            padding: 0%;
+
         }
         .underServices{
             display: flex;
             flex-direction: row;
             align-items: center;
+            justify-content: space-evenly;
+            width: 100%;
+            margin-bottom: 90px;
         }
         .underServices button{
             width: 10vw;
@@ -211,8 +217,8 @@
 
 
         }
-        .underServices div:nth-last-child(n+2){
-            margin-right: 108px;
+        .underServices div button:nth-last-child(n+2){
+            margin-right: 38px;
         }
         .underServices h2{
             font-family: Inika;
@@ -225,36 +231,61 @@
         }
         
         .service {
-            background-color: #fff;
-            padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-right: 116px;
+            width: 20vw;
+            margin-bottom: 5vh;
+            background-color: #f0f8f0;
+            text-align: center;
+            border: 1px solid #E3E1D5;
         }
         .service img {
             width: 100%;
-            height: 200px;
+            height: 30vh;
             object-fit: cover;
-            border-radius: 10px;
             margin-bottom: 10px;
+            border-radius: 10px 10px 0 0;
         }
         .service h3 {
             margin-bottom: 5px;
+            font-family: Inter;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 20px;
+            letter-spacing: 0%;
+            color: #E06733;
+            margin-top: 0;
         }
-        .service p {
-            text-align: left;
+        .service p{
+            font-family: Inter;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 0%;
+            color:#717171;
+        }
+        .servicesList{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
         }
         .pricing {
             background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba( 0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
         }
-        .pricing h2 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .pricing p {
-            text-align: center;
+        .pricing h2{
+            font-family: Inter;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 50px;
+            letter-spacing: 0%;
+            
+
         }
     </style>
 </head>
@@ -299,25 +330,54 @@
                     <button>Planting</button>
                 </div>
             </div>
-            <div class="service">
-                <img src="placeholder-300x200.png" alt="Garden Care">
-                <h3>Garden Care</h3>
-                <p>Lorem Ipsum has been the industry.</p>
+            <div class="servicesList">
+                <div class="service">
+                    <img src="img/Services/GardenCare/1.png" alt="Garden Care">
+                    <h3>Garden Care</h3>
+                    <p>Lorem Ipsum has been the industry.</p>
+                </div>
+                <div class="service">
+                    <img src="img/Services/Planting/2.png" alt="Planting">
+                    <h3>Planting</h3>
+                    <p>Lorem Ipsum has been the industry.</p>
+                </div>
+                <div class="service">
+                    <img src="img/Services/LawnCare/3.png" alt="Lawn Care">
+                    <h3>Lawn Care</h3>
+                    <p>Lorem Ipsum has been the industry.</p>
+                </div>
+                <div class="service">
+                    <img src="img/Services/Planting/4.png" alt="Planting">
+                    <h3>Planting</h3>
+                    <p>Lorem Ipsum has been the industry.</p>
+                </div>
+                <div class="service">
+                    <img src="img/Services/GardenCare/5.png" alt="Garden Care">
+                    <h3>Garden Care</h3>
+                    <p>Lorem Ipsum has been the industry.</p>
+                </div>
+                <div class="service">
+                    <img src="img/Services/Planting/6.png" alt="Planting">
+                    <h3>Planting</h3>
+                    <p>Lorem Ipsum has been the industry.</p>
+                </div>
             </div>
-            <div class="service">
-                <img src="placeholder-300x200.png" alt="Planting">
-                <h3>Planting</h3>
-                <p>Lorem Ipsum has been the industry.</p>
-            </div>
-            <div class="service">
-                <img src="placeholder-300x200.png" alt="Lawn Care">
-                <h3>Lawn Care</h3>
-                <p>Lorem Ipsum has been the industry.</p>
-            </div>
+            
         </section>
         <section class="pricing">
-            <h2>Pricing</h2>
-            <p>Contact us for a detailed pricing list.</p>
+            <div>
+                <h2>Prices</h2>
+                <ul>
+                    <li><button>Basics</button></li>
+                    <li><button>Standart</button></li>
+                    <li><button>Pro care</button></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Our best <span class="plantsSymbols">gardeners</span> are ready to help you</h2>
+                <button>Contact us</button>
+                <img src="img/main-container/leafs.png" alt="leafs">
+            </div>
         </section>
     </div>
 </body>
