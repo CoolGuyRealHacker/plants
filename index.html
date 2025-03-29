@@ -72,9 +72,7 @@
             color: #E06733;
 
         }
-        ul li:first-child{
-            margin-left: 0;
-        }
+        
         .container {
             margin: 0 auto;
             width: 100vw;
@@ -201,7 +199,7 @@
             width: 100%;
             margin-bottom: 90px;
         }
-        .underServices button{
+        .underButton{
             width: 10vw;
             height: 5vh;
             border-radius: 5px;
@@ -277,6 +275,12 @@
             flex-direction: row;
             align-items: center;
             justify-content: space-around;
+            height: 560px;
+            width: 100vw;
+        }
+        .pricing img{
+            height:175px;
+            width:150px;
         }
         .pricing h2{
             font-family: Inter;
@@ -284,8 +288,42 @@
             font-size: 40px;
             line-height: 50px;
             letter-spacing: 0%;
+        }
+        .pricing div{
+            display: flex;
+            flex-direction: column;
+        }
+        .pricing .leftPrice{
+            justify-content: flex-start;
+            height: 100%;
+            flex-wrap: wrap;
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+        }
+        .subMenuButtons{
+            align-self: flex-end;
+            width: 60%;
+            height: 5vh;
+            margin-bottom: 32px;
+            border-radius: 20px;
+            background-color: #EDF2EC;
             
-
+        }
+        .pricing .rightPrice{
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            height: 100%;
+        }
+        .rightPrice button{
+            width: 30%;
+            margin: 38px 0;
+        }
+        .rightPrice h2{
+            text-align: right;
         }
     </style>
 </head>
@@ -325,9 +363,9 @@
             <div class="underServices">
                 <h2>Service and our projects</h2>
                 <div>
-                    <button>Gardens</button>
-                    <button>Lawn</button>
-                    <button>Planting</button>
+                    <button class="underButton">Gardens</button>
+                    <button class="underButton">Lawn</button>
+                    <button class="underButton">Planting</button>
                 </div>
             </div>
             <div class="servicesList">
@@ -365,17 +403,26 @@
             
         </section>
         <section class="pricing">
-            <div>
+            <div class="leftPrice">
                 <h2>Prices</h2>
-                <ul>
-                    <li><button>Basics</button></li>
-                    <li><button>Standart</button></li>
-                    <li><button>Pro care</button></li>
-                </ul>
+                <div>
+                    <div class="subMenuButtons">
+                        <p>Basics</p>
+                        <img src="img/prices/subMenuIcon.svg">
+                    </div>
+                    <div class="subMenuButtons">
+                        <p>Standart</p>
+                        <img src="img/prices/subMenuIcon.svg">
+                    </div>
+                    <div class="subMenuButtons">
+                        <p>Pro care</p>
+                        <img src="img/prices/subMenuIcon.svg">
+                    </div>
+                </div>
             </div>
-            <div>
-                <h2>Our best <span class="plantsSymbols">gardeners</span> are ready to help you</h2>
-                <button>Contact us</button>
+            <div class="rightPrice">
+                <h2>Our best <span class="plantsSymbols">gardeners</span> are<br>ready to help you</h2>
+                <button class="underButton">Contact us</button>
                 <img src="img/main-container/leafs.png" alt="leafs">
             </div>
         </section>
